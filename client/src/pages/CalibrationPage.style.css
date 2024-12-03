@@ -1,0 +1,23 @@
+#calibration-page{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* box-sizing: border-box; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.option-calibration{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}

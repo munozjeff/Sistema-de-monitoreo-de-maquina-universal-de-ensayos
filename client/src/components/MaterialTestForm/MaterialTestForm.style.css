@@ -1,0 +1,108 @@
+/* Contenedor principal del formulario */
+#material-test-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Título del formulario */
+#material-test-form h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Etiquetas */
+.material-form-label {
+  display: block;
+  color: #666;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Inputs y selects */
+.material-form-input,
+.material-form-select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.material-form-input:hover,
+.material-form-select:hover {
+  border-color: #aaa;
+}
+
+.material-form-input:focus,
+.material-form-select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* Contenedor para los campos de forma */
+.shape-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.shape-container .material-form-input {
+  flex: 1;
+}
+
+.control-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Botón de continuar */
+.continue-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0056b3;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.continue-button:hover {
+  background-color: #004494;
+}
+
+.continue-button:active {
+  background-color: #003366;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  #material-test-form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #material-test-form h2 {
+    font-size: 20px;
+  }
+
+  .shape-container {
+    flex-direction: column;
+  }
+}
